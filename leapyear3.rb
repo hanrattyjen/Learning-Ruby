@@ -7,10 +7,9 @@ end_year = gets.chomp.to_i
 next_leap_year = (start_year + (4-(start_year%4)))
 
 puts start_year
-puts next_leap_year
-until next_leap_year == end_year 
-	next_leap_year += 4
+until next_leap_year >= end_year 
 	puts next_leap_year
+	next_leap_year += 4
 end
 
 

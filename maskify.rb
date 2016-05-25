@@ -34,7 +34,7 @@ end
 
 maskify(input)
 
-
+# ALTERNATIVE
 def maskify(cc)
   # your beautiful code goes here
   cc.size <= 4 ? cc : "#" * (cc.length-4) + cc[-4..-1]

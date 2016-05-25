@@ -1,0 +1,25 @@
+name = "Jordan"
+
+def upper(string)
+  string.upcase
+end
+
+def lower(string)
+  string.downcase
+end
+
+def random_name
+  ["Jordan", "Nikesh"].sample
+end
+
+def random_case(string)
+  [upper(string), lower(string)].sample
+end
+
+def random_both
+  random_name(random_case(string))
+end
+
+# Your code goes here
+
+puts "Hello #{random_both}"
